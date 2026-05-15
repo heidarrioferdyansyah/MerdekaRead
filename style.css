@@ -1,0 +1,332 @@
+/* =========================================
+   DARK MODE THEME ENGINE
+========================================= */
+:root, body[data-theme="guest"] {
+    --bg-main: #020617; --primary: #6366f1; --primary-rgb: 99, 102, 241;
+    --text-main: #f8fafc; --text-muted: #94a3b8;
+    --glass-bg: rgba(15, 23, 42, 0.6); --glass-border: rgba(255, 255, 255, 0.08);
+    --blob-1: #1e1b4b; --blob-2: #312e81; --blob-3: #0f172a;
+}
+body[data-theme="sd"] {
+    --bg-main: #0c0202; --primary: #f43f5e; --primary-rgb: 244, 63, 94;
+    --text-main: #fff1f2; --text-muted: #fda4af;
+    --glass-bg: rgba(20, 5, 5, 0.7); --glass-border: rgba(244, 63, 94, 0.2);
+    --blob-1: #4c0519; --blob-2: #881337; --blob-3: #000000;
+}
+body[data-theme="smp"] {
+    --bg-main: #020617; --primary: #3b82f6; --primary-rgb: 59, 130, 246;
+    --text-main: #eff6ff; --text-muted: #93c5fd;
+    --glass-bg: rgba(7, 15, 30, 0.7); --glass-border: rgba(59, 130, 246, 0.2);
+    --blob-1: #1e3a8a; --blob-2: #1e40af; --blob-3: #020617;
+}
+body[data-theme="sma"] {
+    --bg-main: #0f172a; --primary: #94a3b8; --primary-rgb: 148, 163, 184;
+    --text-main: #f8fafc; --text-muted: #cbd5e1;
+    --glass-bg: rgba(30, 41, 59, 0.7); --glass-border: rgba(255, 255, 255, 0.1);
+    --blob-1: #334155; --blob-2: #1e293b; --blob-3: #020617;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+body { background-color: var(--bg-main); color: var(--text-main); min-height: 100vh; overflow-x: hidden; }
+
+/* Background Globs */
+.liquid-bg { position: fixed; inset: 0; z-index: -2; overflow: hidden; background: var(--bg-main); }
+.blob { position: absolute; border-radius: 50%; filter: blur(100px); opacity: 0.6; }
+.blob-1 { width: 600px; height: 600px; background: var(--blob-1); top: -150px; left: -150px; }
+.blob-2 { width: 500px; height: 500px; background: var(--blob-2); bottom: -100px; right: 0; }
+.blob-3 { width: 400px; height: 400px; background: var(--blob-3); top: 30%; left: 30%; }
+
+/* Glass Components */
+.glass-panel {
+    background: var(--glass-bg); backdrop-filter: blur(25px); -webkit-backdrop-filter: blur(25px);
+    border: 1px solid var(--glass-border); border-top: 1px solid rgba(255,255,255,0.15);
+    border-radius: 32px; box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+.app-container { display: flex; max-width: 1600px; margin: 0 auto; padding: 1.5rem; gap: 1.5rem; min-height: 100vh; }
+
+/* Sidebar */
+.sidebar { width: 280px; padding: 2.5rem 1.5rem; display: flex; flex-direction: column; position: sticky; top: 1.5rem; height: calc(100vh - 3rem); }
+.brand { display: flex; align-items: center; gap: 1rem; margin-bottom: 3.5rem; }
+.logo-icon { width: 48px; height: 48px; background: var(--primary); border-radius: 16px; display: grid; place-items: center; color: #fff; font-size: 1.2rem; box-shadow: 0 8px 20px rgba(var(--primary-rgb), 0.3); }
+.brand-text { font-family: 'Outfit', sans-serif; font-size: 1.6rem; letter-spacing: -0.5px; }
+
+.nav-title { font-size: 0.7rem; color: var(--text-muted); font-weight: 800; letter-spacing: 2px; margin-bottom: 1.2rem; padding-left: 1rem; }
+#mainNav { display: flex; flex-direction: column; gap: 0.6rem; flex: 1; }
+.nav-btn { background: transparent; border: none; color: var(--text-muted); padding: 1.1rem; border-radius: 18px; text-align: left; font-size: 1rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 1rem; }
+.nav-btn.active { background: rgba(255, 255, 255, 0.05); color: #fff; border: 1px solid var(--glass-border); }
+.nav-btn:hover:not(.active) { transform: translateX(10px); color: var(--primary); }
+
+.sidebar-footer { margin-top: auto; }
+.btn-outline { width: 100%; padding: 1rem; background: transparent; border: 1.5px solid var(--glass-border); color: var(--text-main); border-radius: 16px; font-weight: 700; cursor: pointer; font-size: 0.85rem; display: flex; justify-content: center; align-items: center; gap: 0.5rem;}
+.btn-outline:hover { background: var(--primary); border-color: var(--primary); color: #fff; box-shadow: 0 8px 20px rgba(var(--primary-rgb), 0.3); }
+
+/* Main Section */
+.main-content { flex: 1; display: flex; flex-direction: column; gap: 1.5rem; min-width: 0; }
+.glass-header {
+    background: var(--glass-bg); backdrop-filter: blur(30px); border-radius: 28px;
+    padding: 1.2rem 2.5rem; display: flex; justify-content: space-between; align-items: center;
+    position: sticky; top: 1.5rem; z-index: 1000; box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+.search-wrapper { display: flex; align-items: center; gap: 1rem; background: rgba(0,0,0,0.3); padding: 0.9rem 1.8rem; border-radius: 22px; width: 450px; border: 1px solid var(--glass-border); }
+.search-wrapper input { background: transparent; border: none; color: #fff; flex: 1; outline: none; font-size: 0.95rem; }
+.search-icon { color: var(--primary); }
+
+/* PROFILE WIDGET */
+.profile-widget { display: flex; flex-direction: row; align-items: center; gap: 1rem; cursor: pointer; }
+.profile-widget:hover { transform: scale(1.03); }
+.pro-badge { background: var(--primary); padding: 7px 16px; border-radius: 20px; font-weight: 800; font-size: 0.8rem; color: #fff; }
+.avatar { width: 46px; height: 46px; border-radius: 50%; border: 2px solid var(--primary); object-fit: cover; background: #1e293b; }
+
+/* Filter Pill */
+.sub-filter-container { display: flex; gap: 0.8rem; flex-wrap: wrap; padding: 0 0.5rem; }
+.sub-btn { background: var(--glass-bg); border: 1px solid var(--glass-border); color: var(--text-muted); padding: 0.7rem 1.4rem; border-radius: 50px; cursor: pointer; font-size: 0.85rem; font-weight: 700; }
+.sub-btn.active { background: #fff; color: #000; border-color: #fff; }
+
+/* Grid & Card */
+.content-wrapper { padding: 3rem; }
+.header-title h1 { font-family: 'Outfit', sans-serif; font-size: 2.8rem; margin-bottom: 0.5rem; }
+.header-title p { color: var(--text-muted); margin-bottom: 2.5rem; }
+
+.library-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2.5rem; }
+.book-card { background: rgba(255, 255, 255, 0.03); border: 1px solid var(--glass-border); border-radius: 30px; padding: 1.3rem; position: relative; overflow: hidden; }
+.card-cover { width: 100%; height: 340px; object-fit: cover; border-radius: 20px; margin-bottom: 1.5rem; }
+.class-tag { 
+    position: absolute; 
+    top: 30px; 
+    right: 30px; 
+    background: rgba(0,0,0,0.7); 
+    backdrop-filter: blur(10px); 
+    color: var(--primary); 
+    padding: 6px 14px; 
+    border-radius: 12px; 
+    font-weight: 800; 
+    font-size: 0.7rem; 
+    border: 1px solid var(--primary);
+    z-index: 10; /* <--- INI OBAT BIAR GAK KETINDIH FOTO */
+}
+
+.card-info h3 { font-size: 1.2rem; line-height: 1.4; margin-bottom: 0.4rem; color: #fff; }
+.card-info p { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+
+/* Buttons */
+.btn-group { display: flex; gap: 0.8rem; }
+.btn-action { flex: 1; padding: 0.85rem; border-radius: 14px; font-weight: 800; cursor: pointer; border: none; font-size: 0.85rem; text-align: center; text-decoration: none; }
+.btn-read { background: var(--primary); color: #fff; box-shadow: 0 4px 15px rgba(var(--primary-rgb), 0.3); }
+.btn-dl { background: rgba(255,255,255,0.05); border: 1px solid var(--primary); color: var(--primary); }
+
+/* =========================================
+   ALL MODALS (BUG FIX: ANIMASI TELAT & PRESISI)
+========================================= */
+.modal-overlay { 
+    position: fixed; inset: 0; background: rgba(0,0,0,0.85); backdrop-filter: blur(15px); 
+    z-index: 9999; display: flex; justify-content: center; align-items: center; padding: 2rem;
+    opacity: 1; visibility: visible; transition: all 0.4s ease;
+}
+
+/* Wujud Card Modalnya */
+.modal-content, .reader-glass, .login-card {
+    transform: scale(1) translateY(0);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    transition-delay: 0.1s; /* Biar background itemnya muncul duluan baru cardnya */
+    margin: auto;
+}
+
+/* WUJUD PAS DISEMBUNYIIN (Trik CSS Murni) */
+.hidden { 
+    opacity: 0 !important; 
+    visibility: hidden !important; 
+    pointer-events: none !important; /* Biar gak bisa di-klik pas ngilang */
+    backdrop-filter: blur(0px) !important;
+}
+
+/* Wujud Card pas tersembunyi (gepeng ke bawah) */
+.hidden .modal-content, 
+.hidden .reader-glass, 
+.hidden .login-card {
+    transform: scale(0.9) translateY(30px);
+    transition-delay: 0s;
+}
+
+/* Login Modal Spesifik */
+.login-card { width: 100%; max-width: 440px; padding: 3.5rem; text-align: center; border: 1px solid var(--glass-border); }
+.login-header h2 { font-size: 2.2rem; margin: 1rem 0; color: #fff; }
+.input-group { text-align: left; margin-bottom: 1.8rem; }
+.input-group label { display: block; font-weight: 700; margin-bottom: 0.6rem; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; }
+.input-group input { width: 100%; padding: 1.1rem; border-radius: 14px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.03); color: #fff; outline: none; }
+.input-group input:focus { border-color: var(--primary); }
+.modal-actions { display: flex; gap: 1rem; margin-top: 2rem; }
+
+/* Custom Select Dropdown */
+.custom-select-wrapper select {
+    width: 100%; padding: 1.1rem; border-radius: 14px; border: 1px solid var(--glass-border);
+    background: rgba(255,255,255,0.03); color: #fff; appearance: none; outline: none; font-weight: 700;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat; background-position: right 1.2rem center; background-size: 1em; cursor: pointer;
+}
+.custom-select-wrapper select option { background-color: #0f172a; color: #fff; }
+.btn-primary { width: 100%; padding: 1.1rem; background: var(--primary); color: #fff; border: none; border-radius: 14px; font-weight: 800; cursor: pointer; box-shadow: 0 10px 20px rgba(var(--primary-rgb), 0.2); flex: 2;}
+
+/* Credits Modal Spesifik */
+.modal-content { width: 100%; max-width: 550px; padding: 3.5rem; text-align: center; position: relative; }
+.dev-avatar { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; border: 3px solid var(--primary); }
+.dev-name { color: var(--text-main); font-family: 'Outfit'; font-size: 2rem; margin-bottom: 0.5rem;}
+.dev-role { color: var(--primary); font-weight: 800; margin-bottom: 1.2rem; letter-spacing: 2px; font-size: 0.8rem; }
+.dev-desc { color: var(--text-muted); line-height: 1.7; margin-bottom: 2rem; font-size: 0.95rem; }
+.dev-stats { display: flex; justify-content: center; gap: 1.5rem; font-weight: 700; font-size: 0.85rem; color: var(--text-main);}
+.dev-stats i { color: var(--primary); margin-right: 5px;}
+
+/* Reader Modal Spesifik */
+.reader-glass { width: 100%; max-width: 1200px; height: 90vh; display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--primary); }
+.reader-header { padding: 1.5rem 3rem; background: rgba(0,0,0,0.5); display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.reader-header h3 { color: var(--primary); font-family: 'Outfit'; font-size: 1.5rem; }
+.reader-body { flex: 1; background: #1e293b; }
+iframe { width: 100%; height: 100%; border: none; }
+
+/* Tombol Silang (X) */
+.close-modal { 
+    background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); 
+    width: 45px; height: 45px; border-radius: 50%; color: #fff; 
+    cursor: pointer; font-size: 1.2rem; display: flex; justify-content: center; align-items: center; 
+}
+#creditsModal .close-modal { position: absolute; top: 1.5rem; right: 1.5rem; }
+.close-modal:hover { background: var(--primary); border-color: var(--primary); transform: rotate(90deg); }
+
+/* =========================================
+   RESPONSIVE MOBILE DESIGN (SMART LAYOUT)
+========================================= */
+
+/* LAYAR TABLET / HP LANDSCAPE (Lebar sedang) */
+@media screen and (max-width: 992px) {
+    .app-container { flex-direction: column; padding: 0.8rem; }
+    
+    .sidebar { 
+        width: 100%; height: auto; position: relative; 
+        top: 0; padding: 1.5rem 1rem; margin-bottom: 0.5rem;
+    }
+    .brand { justify-content: center; margin-bottom: 1.5rem; }
+
+    #mainNav { 
+        flex-direction: row; flex-wrap: wrap; justify-content: center; 
+        gap: 0.8rem; width: 100%; overflow: visible; 
+    }
+    
+    /* 3 Tombol Tingkat berjejer 3 di bawah */
+    .nav-btn { 
+        flex: 1 1 calc(30% - 0.8rem); 
+        min-width: 130px; white-space: normal; padding: 0.8rem;
+        justify-content: center; font-size: 0.85rem;
+    }
+
+    /* KHUSUS BERANDA: Paksa full lebar sendirian di atas */
+    .nav-btn[data-level="all"] {
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    .nav-title { text-align: center; width: 100%; padding: 0; margin-bottom: 1rem; }
+    /* Munculin lagi tombol Developer di HP dan taruh di bawah menu */
+    .sidebar-footer { 
+        display: block; 
+        width: 100%; 
+        margin-top: 1rem; 
+        padding-top: 1rem;
+        border-top: 1px solid var(--glass-border);
+    }
+    
+    .glass-header { flex-direction: column-reverse; gap: 1.2rem; padding: 1.2rem; margin-top: 0.5rem;}
+    .search-wrapper, .profile-widget { width: 100%; }
+    .profile-widget { justify-content: space-between; }
+    .sub-filter-container { justify-content: center; padding: 0.5rem; }
+
+    .content-wrapper { padding: 1.5rem; }
+    .header-title h1 { font-size: 1.8rem; text-align: center; }
+    .header-title p { text-align: center; }
+    .library-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .card-cover { height: 280px; }
+    
+    .login-card, .modal-content { width: 92%; padding: 2rem 1rem; }
+    /* Fix Modal Baca biar tetep melengkung (nggak lancip) di HP */
+    .reader-glass { 
+        width: 95%; 
+        height: 95vh; 
+        border-radius: 24px; 
+        border: 1px solid var(--glass-border); 
+        margin: auto; 
+    }
+    
+    .reader-header { padding: 1rem 1.5rem; }
+    
+    /* Fix Tombol X biar nggak gepeng ketarik judul */
+    .reader-header .close-modal {
+        flex-shrink: 0; 
+        width: 45px; 
+        height: 45px;
+    }
+}
+
+/* LAYAR HP VERTIKAL (Makin sempit) */
+@media screen and (max-width: 550px) {
+    /* Balikin semua tombol (termasuk Beranda) jadi 2 atas 2 bawah (2x2) */
+    .nav-btn, .nav-btn[data-level="all"] { 
+        flex: 1 1 calc(45% - 0.5rem); 
+        min-width: 130px;
+    }
+}
+
+/* =========================================
+   ULTRAWIDE MONITOR FIX (Layar Super Lebar)
+========================================= */
+
+/* Kode ini cuma aktif kalau lebar layar komputer di atas 1600px */
+@media screen and (min-width: 1600px) {
+    /* 1. Bikin kontainer lebih melar ngikutin 90% lebar layar */
+    .app-container {
+        max-width: 92vw; 
+        gap: 3rem; /* Jarak antara sidebar dan konten dilebarin */
+    }
+
+    /* 2. Sidebar dilebarin dikit biar nggak keliatan cungkring */
+    .sidebar {
+        width: 320px;
+        padding: 3rem 2rem;
+    }
+
+    .brand-text {
+        font-size: 2rem; /* Judul logo digedein */
+    }
+
+    .nav-btn {
+        font-size: 1.1rem;
+        padding: 1.3rem;
+    }
+
+    /* 3. Area Konten Utama disesuaikan */
+    .content-wrapper {
+        padding: 4rem;
+    }
+
+    .header-title h1 {
+        font-size: 3.5rem; /* Teks arsip digital digedein */
+    }
+
+    .search-wrapper {
+        width: 600px; /* Kotak search dibikin lebih panjang */
+        padding: 1rem 2rem;
+    }
+
+    /* 4. Grid Buku dibikin lebih proporsional */
+    .library-grid {
+        /* Kartu buku minimal 320px biar nggak terlalu kecil-kecil berjejer */
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 3rem;
+    }
+
+    .card-cover {
+        height: 400px; /* Gambar buku dibikin lebih tinggi */
+    }
+
+    .card-info h3 {
+        font-size: 1.4rem;
+    }
+}
