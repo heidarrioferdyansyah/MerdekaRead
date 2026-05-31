@@ -89,10 +89,26 @@ const AppDatabase = [
         author: "Lala Intan Gemala",
         driveId: "11E6x5QIYbOdbC37gaW9RwhQke0sRbDlM" 
     },
+    {
+        id: "BOK-11",
+        level: "sd",
+        grade: "Kelas 1",
+        subject: "Pendidikan Pancasila dan Kewarganegaraan (PPKn)",
+        author: "Canny Ilmiati, Etika Indah Febriani, Elisa Seftriyana",
+        driveId: "1CbQXGmDLT6LsvufTn7zg-WpGtJ20djMR" 
+    },
+    {
+        id: "BOK-12",
+        level: "sd",
+        grade: "Kelas 1",
+        subject: "Pendidikan Jasmani Olahraga dan Kesehatan (PJOK)",
+        author: "Puji Rahayu & Umi Hariyani",
+        driveId: "15spwz2RjR_6GHo7fOf2riZs4rxUZ44S3" 
+    },
 
     // --- BUKU SD kelas 2 --- 
     {
-        id: "BOK-11",
+        id: "BOK-13",
         level: "sd",
         grade: "Kelas 2",
         subject: "Pendidikan Agama Buddha dan Budi Pekerti",
@@ -102,7 +118,7 @@ const AppDatabase = [
     },
     
     {
-        id: "BOK-12",
+        id: "BOK-14",
         level: "sd",
         grade: "Kelas 2",
         subject: "Pendidikan Agama Hindu dan Budi Pekerti",
@@ -110,7 +126,7 @@ const AppDatabase = [
         driveId: "1jDfYCl1LUqdJGfxOeLgfThaWWA1UPvnJ" 
     },
     {
-        id: "BOK-13",
+        id: "BOK-15",
         level: "sd",
         grade: "Kelas 2",
         subject: "Pendidikan Agama Islam dan Budi Pekerti",
@@ -118,7 +134,7 @@ const AppDatabase = [
         driveId: "12DoEo8C8zdqj_muJvB9_lBdw4GFN4mIU" 
     },
     {
-        id: "BOK-14",
+        id: "BOK-16",
         level: "sd",
         grade: "Kelas 2",
         subject: "Pendidikan Agama Katolik dan Budi Pekerti",
@@ -127,7 +143,7 @@ const AppDatabase = [
         coverBackup: "katoliksd2.png"
     },
     {
-        id: "BOK-15",
+        id: "BOK-17",
         level: "sd",
         grade: "Kelas 2",
         subject: "Pendidikan Agama Khonghucu dan Budi Pekerti",
@@ -135,7 +151,7 @@ const AppDatabase = [
         driveId: "1IsQaTYvd6Jnp0g5zTsCs-csTXDMxh6uX" 
     },
     {
-        id: "BOK-16",
+        id: "BOK-18",
         level: "sd",
         grade: "Kelas 2",
         subject: "Pendidikan Agama Kristen dan Budi Pekerti",
@@ -144,7 +160,7 @@ const AppDatabase = [
         coverBackup: "kristensd2.png"
     },
     {
-        id: "BOK-17",
+        id: "BOK-19",
         level: "sd",
         grade: "Kelas 2",
         subject: "Pendidikan Kepercayaan Terhadap Tuhan Yang Maha Esa dan Budi Pekerti",
@@ -152,7 +168,7 @@ const AppDatabase = [
         driveId: "1mXS5z7qoDN0wXAzzUqrkKFi__sUkbMkf" 
     },
     {
-        id: "BOK-18",
+        id: "BOK-20",
         level: "sd",                // Pilihan: 'sd', 'smp', 'sma'
         grade: "Kelas 2",           // Kelas
         subject: "Bahasa Indonesia",// Mata Pelajaran
@@ -161,7 +177,7 @@ const AppDatabase = [
         driveId: "1EnWGmfvNe3L4vDRNHHjKGp2Lq26B51VA" // <--- MASUKIN ID PDF GOOGLE DRIVE DI SINI
     },
     {
-        id: "BOK-19",
+        id: "BOK-21",
         level: "sd",
         grade: "Kelas 2",
         subject: "Matematika",
@@ -170,7 +186,7 @@ const AppDatabase = [
         driveId: "1o3dfbDuMthMakg0ETbc1lrdRLrGF09Nn"
     },
     {
-        id: "BOK-20",
+        id: "BOK-22",
         level: "sd",
         grade: "Kelas 2",
         subject: "Matematika",
@@ -180,7 +196,7 @@ const AppDatabase = [
         coverBackup: "matsd2.png"
     },
     {
-        id: "BOK-21",
+        id: "BOK-23",
         level: "sd",
         grade: "Kelas 2",
         subject: "Bahasa Inggris",
@@ -188,10 +204,18 @@ const AppDatabase = [
         author: "EYLC Team",
         driveId: "19CDmfhrCtJZzFEs923wab3nF6srgirFB" 
     },
+    {
+        id: "BOK-24",
+        level: "sd",
+        grade: "Kelas 2",
+        subject: "Pendidikan Pancasila dan Kewarganegaraan (PPKn)",
+        author: "Shoia Nurun Alanur S, Resha Hadi Sucipto, Soeharti",
+        driveId: "1K5UMCFizHv9uPdEeLC6m4DH3zFIFHTkN" 
+    },
 
     // --- BUKU SD kelas 3 ---    
     {
-        id: "BOK-22",
+        id: "BOK-25",
         level: "sd",
         grade: "Kelas 3",
         subject: "Pendidikan Agama Buddha dan Budi Pekerti",
@@ -201,7 +225,7 @@ const AppDatabase = [
     },
     
     {
-        id: "BOK-23",
+        id: "BOK-26",
         level: "sd",
         grade: "Kelas 3",
         subject: "Pendidikan Agama Hindu dan Budi Pekerti",
@@ -209,7 +233,7 @@ const AppDatabase = [
         driveId: "1gsNKvFCF_nAKHhGHJ1YvLZmUcsYUqdMH" 
     },
     {
-        id: "BOK-24",
+        id: "BOK-27",
         level: "sd",
         grade: "Kelas 3",
         subject: "Pendidikan Agama Islam dan Budi Pekerti",
@@ -218,7 +242,7 @@ const AppDatabase = [
         coverBackup: "islamsd3.png"
     },
     {
-        id: "BOK-25",
+        id: "BOK-28",
         level: "sd",
         grade: "Kelas 3",
         subject: "Pendidikan Agama Katolik dan Budi Pekerti",
@@ -227,7 +251,7 @@ const AppDatabase = [
         coverBackup: "katoliksd3.png"
     },
     {
-        id: "BOK-26",
+        id: "BOK-29",
         level: "sd",
         grade: "Kelas 3",
         subject: "Pendidikan Agama Khonghucu dan Budi Pekerti",
@@ -235,7 +259,7 @@ const AppDatabase = [
         driveId: "1DSAHogxg0uk3WMK9vDOJCSOAw55uOg1G" 
     },
     {
-        id: "BOK-27",
+        id: "BOK-30",
         level: "sd",
         grade: "Kelas 3",
         subject: "Pendidikan Agama Kristen dan Budi Pekerti",
@@ -244,7 +268,7 @@ const AppDatabase = [
         coverBackup: "kristensd3.png"
     },
     {
-        id: "BOK-28",
+        id: "BOK-31",
         level: "sd",
         grade: "Kelas 3",
         subject: "Pendidikan Kepercayaan Terhadap Tuhan Yang Maha Esa dan Budi Pekerti",
@@ -253,7 +277,7 @@ const AppDatabase = [
         coverBackup: "kepercayaansd3.png"
     },
     {
-        id: "BOK-29",
+        id: "BOK-32",
         level: "sd",                // Pilihan: 'sd', 'smp', 'sma'
         grade: "Kelas 3",           // Kelas
         subject: "Bahasa Indonesia",// Mata Pelajaran
@@ -262,7 +286,7 @@ const AppDatabase = [
         driveId: "1ylwYwxq7jZHpMhcWdcw7Wsweez2Kyr5M" // <--- MASUKIN ID PDF GOOGLE DRIVE DI SINI
     },
     {
-        id: "BOK-30",
+        id: "BOK-33",
         level: "sd",
         grade: "Kelas 3",
         subject: "Matematika",
@@ -270,7 +294,7 @@ const AppDatabase = [
         driveId: "1jxcaMgWFxT-U283mVKLdlWVvxY8TuZYy"
     },
     {
-        id: "BOK-31",
+        id: "BOK-34",
         level: "sd",
         grade: "Kelas 3",
         subject: "Bahasa Inggris",
@@ -279,14 +303,131 @@ const AppDatabase = [
         driveId: "1G19Aawtyanu83sEoZ6UaDSRNwPWNea2P" 
     },
     {
-        id: "BOK-32",
+        id: "BOK-35",
         level: "sd",
         grade: "Kelas 3",
         subject: "Ilmu Pegetahuan Alam dan Sosial (IPAS)",
         author: "Amalia Fitri, dkk.",
         driveId: "1lqc41bk-pTVRjBQV_hi6-UfeSrrpjZwp" 
     },
+    {
+        id: "BOK-36",
+        level: "sd",
+        grade: "Kelas 3",
+        subject: "Pendidikan Pancasila dan Kewarganegaraan (PPKn)",
+        author: "Ressi Kartika Dewi, Kamala Rahayu Candra Sary, Hani Hanifah",
+        driveId: "1w2PLWIz3EOIBN61fwatru0lClOfc599r" 
+    },
 
+
+    // --- BUKU SD kelas 4-    
+    {
+        id: "BOK-37",
+        level: "sd",
+        grade: "Kelas 4",
+        subject: "Pendidikan Agama Buddha dan Budi Pekerti",
+        author: "Suyatno & Rustam",
+        driveId: "1V1hOQUY_Xiwu3DLv5Fc-FxrNYrcpyuI0"
+    },
+    
+    {
+        id: "BOK-38",
+        level: "sd",
+        grade: "Kelas 4",
+        subject: "Pendidikan Agama Hindu dan Budi Pekerti",
+        author: "Komang Edi Putra",
+        driveId: "1GbFJGXDxuTLblU8gEqWOS3Rz2By0tJRq" 
+    },
+    {
+        id: "BOK-39",
+        level: "sd",
+        grade: "Kelas 4",
+        subject: "Pendidikan Agama Islam dan Budi Pekerti",
+        author: "Ahmad Faozan & Jamaluddin",
+        driveId: "1mGYpCpS7rviAS5jiZhbNjAf1yQGBdsHc"
+    },
+    {
+        id: "BOK-40",
+        level: "sd",
+        grade: "Kelas 4",
+        subject: "Pendidikan Agama Katolik dan Budi Pekerti",
+        author: "Daniel Boli Kotan & Marianus Didi Kasmudi",
+        driveId: "1tF4b-nxra9L9DduOOIQfc-fTB3QiXSqz"
+    },
+    {
+        id: "BOK-41",
+        level: "sd",
+        grade: "Kelas 4",
+        subject: "Pendidikan Agama Khonghucu dan Budi Pekerti",
+        author: "Po Budi Wijaya & Yessica Kusumohadi",
+        driveId: "1uppvhZ-A9Rd1s8wseEL_0jsdyXnmPxk9" 
+    },
+    {
+        id: "BOK-42",
+        level: "sd",
+        grade: "Kelas 4",
+        subject: "Pendidikan Agama Kristen dan Budi Pekerti",
+        author: "Norita Yudiet Tompah & Novy Amelia Elisabeth Sine",
+        driveId: "1p4OGMXrpiRhS9sSvm21w4AYg8-533aNb"
+    },
+    {
+        id: "BOK-43",
+        level: "sd",
+        grade: "Kelas 4",
+        subject: "Pendidikan Kepercayaan Terhadap Tuhan Yang Maha Esa dan Budi Pekerti",
+        author: "Feby Lestari Supriyono",
+        driveId: "1OWg5wr7PyHTn2wPeZSFhbw6wdnyd0463"
+    },
+    {
+        id: "BOK-44",
+        level: "sd",                // Pilihan: 'sd', 'smp', 'sma'
+        grade: "Kelas 4",           // Kelas
+        subject: "Bahasa Indonesia",// Mata Pelajaran
+        title: "Lihat Sekitar",        // Judul Buku Spesifik
+        author: "Eva Yulia Nukman & Cicilia Erni Setyowati",     // Nama Penulis
+        driveId: "1OvZfJrrwn3KlsL-3d3mbsJ8VJmPnZFgk" // <--- MASUKIN ID PDF GOOGLE DRIVE DI SINI
+    },
+    {
+        id: "BOK-45",
+        level: "sd",
+        grade: "Kelas 4",
+        subject: "Matematika",
+        author: "Hobri, dkk.",
+        driveId: "1Puq9LVr1UO8yYmo-K4fvzXf-KNhuA6HT"
+    },
+    {
+        id: "BOK-46",
+        level: "sd",
+        grade: "Kelas 4",
+        subject: "Bahasa Inggris",
+        title: "My Next Words",
+        author: "Lilin Rahmawati, Nur FItria Angrisia, Lili Nailufary",
+        driveId: "1I4hB3U1Dch7Ni8AZFVcf7ZzblMY24G0-" 
+    },
+    {
+        id: "BOK-47",
+        level: "sd",
+        grade: "Kelas 4",
+        subject: "Ilmu Pegetahuan Alam dan Sosial (IPAS)",
+        author: "Amalia Fitri, dkk.",
+        driveId: "1lqc41bk-pTVRjBQV_hi6-UfeSrrpjZwp" 
+    },
+    {
+        id: "BOK-48",
+        level: "sd",
+        grade: "Kelas 4",
+        subject: "Pendidikan Pancasila dan Kewarganegaraan (PPKn)",
+        author: "Dede Kurniawan, Dwi Nanta Priharto, Yusnawan Lubis",
+        driveId: "1B_AwuU9FL80kS12hidVR9pWHyedJDv4h" 
+    },
+    {
+        id: "BOK-49",
+        level: "sd",
+        grade: "Kelas 4",
+        subject: "Pendidikan Jasmani Olahraga dan Kesehatan (PJOK)",
+        author: "Alda Indrawan & Tri Agus Prasetijo",
+        driveId: "1-xYVbmgREbn-MjG-sevtYUMsIwa-T6IA" 
+    },
 
 
     // --- BUKU SMP ---
