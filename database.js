@@ -189,6 +189,104 @@ const AppDatabase = [
         driveId: "19CDmfhrCtJZzFEs923wab3nF6srgirFB" 
     },
 
+    // --- BUKU SD kelas 3 ---    
+    {
+        id: "BOK-22",
+        level: "sd",
+        grade: "Kelas 3",
+        subject: "Pendidikan Agama Buddha dan Budi Pekerti",
+        author: "Sri Winarni & Widi Astiyono",
+        driveId: "1Ezbmk6U1soA64eLtRZRbZXJWYY9oebDP",
+        coverBackup: "buddhasd3.png"
+    },
+    
+    {
+        id: "BOK-23",
+        level: "sd",
+        grade: "Kelas 3",
+        subject: "Pendidikan Agama Hindu dan Budi Pekerti",
+        author: "I Made Rajendra",
+        driveId: "1gsNKvFCF_nAKHhGHJ1YvLZmUcsYUqdMH" 
+    },
+    {
+        id: "BOK-24",
+        level: "sd",
+        grade: "Kelas 3",
+        subject: "Pendidikan Agama Islam dan Budi Pekerti",
+        author: "Moh. Ghozali & Erwin Wasti",
+        driveId: "1OVvgI1hI3sdn9i_nIxH6YFOrC2SL5hfO",
+        coverBackup: "islamsd3.png"
+    },
+    {
+        id: "BOK-25",
+        level: "sd",
+        grade: "Kelas 3",
+        subject: "Pendidikan Agama Katolik dan Budi Pekerti",
+        author: "Susi Bonardy & Yenny Suria",
+        driveId: "1HyLo-Q21_GdZnaqN7K8TPt0LYIqBLTMa",
+        coverBackup: "katoliksd3.png"
+    },
+    {
+        id: "BOK-26",
+        level: "sd",
+        grade: "Kelas 3",
+        subject: "Pendidikan Agama Khonghucu dan Budi Pekerti",
+        author: "Sienny Vivi Irawati & Rika Lisnia Putri",
+        driveId: "1DSAHogxg0uk3WMK9vDOJCSOAw55uOg1G" 
+    },
+    {
+        id: "BOK-27",
+        level: "sd",
+        grade: "Kelas 3",
+        subject: "Pendidikan Agama Kristen dan Budi Pekerti",
+        author: "Poppy Febrina Purba",
+        driveId: "1TXSYPg0_bgklEDqQJp34Ct_YP44zCwa3",
+        coverBackup: "kristensd3.png"
+    },
+    {
+        id: "BOK-28",
+        level: "sd",
+        grade: "Kelas 3",
+        subject: "Pendidikan Kepercayaan Terhadap Tuhan Yang Maha Esa dan Budi Pekerti",
+        author: "Poltak Sirait",
+        driveId: "1rCwEgL9-dZ4QF7_O09hzC02FPJ294P0n",
+        coverBackup: "kepercayaansd3.png"
+    },
+    {
+        id: "BOK-29",
+        level: "sd",                // Pilihan: 'sd', 'smp', 'sma'
+        grade: "Kelas 3",           // Kelas
+        subject: "Bahasa Indonesia",// Mata Pelajaran
+        title: "Kawan Seiring",        // Judul Buku Spesifik
+        author: "Anna Farida K. & Helva Nurhidayah",     // Nama Penulis
+        driveId: "1ylwYwxq7jZHpMhcWdcw7Wsweez2Kyr5M" // <--- MASUKIN ID PDF GOOGLE DRIVE DI SINI
+    },
+    {
+        id: "BOK-30",
+        level: "sd",
+        grade: "Kelas 3",
+        subject: "Matematika",
+        author: "Susanto, Arika Indah Kristiana, Arif Fatahillah, Eko Waluyo, Ridho Alfarisi, Hobri",
+        driveId: "1jxcaMgWFxT-U283mVKLdlWVvxY8TuZYy"
+    },
+    {
+        id: "BOK-31",
+        level: "sd",
+        grade: "Kelas 3",
+        subject: "Bahasa Inggris",
+        title: "My Next Words",
+        author: "EYLC Team",
+        driveId: "1G19Aawtyanu83sEoZ6UaDSRNwPWNea2P" 
+    },
+    {
+        id: "BOK-32",
+        level: "sd",
+        grade: "Kelas 3",
+        subject: "Ilmu Pegetahuan Alam dan Sosial (IPAS)",
+        author: "Amalia Fitri, dkk.",
+        driveId: "1lqc41bk-pTVRjBQV_hi6-UfeSrrpjZwp" 
+    },
+
 
 
     // --- BUKU SMP ---
