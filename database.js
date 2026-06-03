@@ -414,7 +414,7 @@ const AppDatabase = [
     },
     {
         id: "BOK-48",
-        level: "sd",
+        level: "sd", 
         grade: "Kelas 4",
         subject: "Pendidikan Pancasila dan Kewarganegaraan (PPKn)",
         author: "Dede Kurniawan, Dwi Nanta Priharto, Yusnawan Lubis",
@@ -429,6 +429,210 @@ const AppDatabase = [
         driveId: "1-xYVbmgREbn-MjG-sevtYUMsIwa-T6IA" 
     },
 
+    // --- BUKU SD kelas 5-    
+    {
+        id: "BOK-50",
+        level: "sd",
+        grade: "Kelas 5",
+        subject: "Pendidikan Agama Buddha dan Budi Pekerti",
+        author: "Sulan & Suyoto",
+        driveId: "14t3EEE-LqJEj0HwXCALSBfxfxxJMBSUc"
+    },
+    
+    {
+        id: "BOK-51",
+        level: "sd",
+        grade: "Kelas 5",
+        subject: "Pendidikan Agama Hindu dan Budi Pekerti",
+        author: "Made Mardika",
+        driveId: "1AiwXasAmmsaIoBLZlH5nJRZqMmBo85E5" 
+    },
+    {
+        id: "BOK-52",
+        level: "sd",
+        grade: "Kelas 5",
+        subject: "Pendidikan Agama Islam dan Budi Pekerti",
+        author: "Soleh Baedowi & Hairil Muhammad Anwar",
+        driveId: "1-ocnjsgt8md8kQmi7jO8EV4qbxXwkozf",
+        coverBackup: "islamsd5.png"
+    },
+    {
+        id: "BOK-53",
+        level: "sd",
+        grade: "Kelas 5",
+        subject: "Pendidikan Agama Katolik dan Budi Pekerti",
+        author: "FX. Dapiyanta & Marianus Didi Kasmudi",
+        driveId: "10HVv2OCD1YSbbgDzZUkAYaoechLLt--r"
+    },
+    {
+        id: "BOK-54",
+        level: "sd",
+        grade: "Kelas 5",
+        subject: "Pendidikan Agama Khonghucu dan Budi Pekerti",
+        author: "Imelda & Lany Guito",
+        driveId: "1wluZrF7QTpT32iBYwGSk57oEGJHLcI2T" 
+    },
+    {
+        id: "BOK-55",
+        level: "sd",
+        grade: "Kelas 5",
+        subject: "Pendidikan Agama Kristen dan Budi Pekerti",
+        author: "Norita Yudiet Tompah",
+        driveId: "1d9DvmkuycaCNOdxi1t3zmoilbqIxtP_S"
+    },
+    {
+        id: "BOK-56",
+        level: "sd",
+        grade: "Kelas 5",
+        subject: "Pendidikan Kepercayaan Terhadap Tuhan Yang Maha Esa dan Budi Pekerti",
+        author: "I Gayes Mahestu & Octama Dwitaningsih",
+        driveId: "1MQAaZP-7U4ATYSp_CI_pWAM9IJXz84-3"
+    },
+    {
+        id: "BOK-57",
+        level: "sd",                // Pilihan: 'sd', 'smp', 'sma'
+        grade: "Kelas 5",           // Kelas
+        subject: "Bahasa Indonesia",// Mata Pelajaran
+        title: "Bergerak Bersama",        // Judul Buku Spesifik
+        author: "Evy Verawaty & Zulqarnain",     // Nama Penulis
+        driveId: "12HGOQosqZVxa0gKICuUkqOz1pSkvL9cx" // <--- MASUKIN ID PDF GOOGLE DRIVE DI SINI
+    },
+    {
+        id: "BOK-58",
+        level: "sd",
+        grade: "Kelas 5",
+        subject: "Matematika",
+        author: "Meita Fitrianawati, Ika Surtiani, Ait Istiandaru",
+        driveId: "1INWlFBvgO8txeuixZvUXcIzdnDnXGGrI"
+    },
+    {
+        id: "BOK-59",
+        level: "sd",
+        grade: "Kelas 5",
+        subject: "Bahasa Inggris",
+        title: "My Next Words",
+        author: "EYLC Team",
+        driveId: "12PUDLtxei_Ang63DAiu5sS6zS4JMlfhi" 
+    },
+    {
+        id: "BOK-60",
+        level: "sd",
+        grade: "Kelas 5",
+        subject: "Ilmu Pegetahuan Alam dan Sosial (IPAS)",
+        author: "Amalia Fitri Ghaniem, dkk.",
+        driveId: "19dr3Hx7wtgBZaPO7_5pjA96iIAQEEsx4" 
+    },
+    {
+        id: "BOK-61",
+        level: "sd", 
+        grade: "Kelas 5",
+        subject: "Pendidikan Pancasila dan Kewarganegaraan (PPKn)",
+        author: "Adi Darma Indra, Abdul Azis, Luh Gede Maya Wirastuti Dewi",
+        driveId: "1G5Iu5tszbTP8kQ5T_lPOYxHmYsBguvZC" 
+    },
+
+    // --- BUKU SD kelas 6-    
+    {
+        id: "BOK-62",
+        level: "sd",
+        grade: "Kelas 6",
+        subject: "Pendidikan Agama Buddha dan Budi Pekerti",
+        author: "Nurwito & Umarnatu",
+        driveId: "1HZr-XS-QMtz5ulpa_8E8S-MzkMa1fNLq"
+    },
+    
+    {
+        id: "BOK-63",
+        level: "sd",
+        grade: "Kelas 6",
+        subject: "Pendidikan Agama Hindu dan Budi Pekerti",
+        author: "Sukirno Hadi Raharjo",
+        driveId: "1gk5VlgFnzh5cZtyTwj0CDQ78ekffwx2t" 
+    },
+    {
+        id: "BOK-64",
+        level: "sd",
+        grade: "Kelas 6",
+        subject: "Pendidikan Agama Islam dan Budi Pekerti",
+        author: "Nazirwan & Kholili Abdullah",
+        driveId: "13BYCLR-5OwEm_TZhOYbS2MmocTLYmPeo"
+    },
+    {
+        id: "BOK-65",
+        level: "sd",
+        grade: "Kelas 6",
+        subject: "Pendidikan Agama Katolik dan Budi Pekerti",
+        author: "FX. Dapiyanta & Marianus Didi Kasmudi",
+        driveId: "1sFQh4Vsab7L6rYtguc1sjla7sHnrEax3"
+    },
+    {
+        id: "BOK-66",
+        level: "sd",
+        grade: "Kelas 6",
+        subject: "Pendidikan Agama Khonghucu dan Budi Pekerti",
+        author: "Yugi Yuniardi & Fandy Maramis",
+        driveId: "1cYwsKCXVjlTp9Z0kFb0HA7g8PUULw-Vi" 
+    },
+    {
+        id: "BOK-67",
+        level: "sd",
+        grade: "Kelas 6",
+        subject: "Pendidikan Agama Kristen dan Budi Pekerti",
+        author: "Novy Amelia Elisabeth Sine",
+        driveId: "1pxRZ2LgmzGU0dO6tcgqVczr1jHPw8_xK"
+    },
+    {
+        id: "BOK-68",
+        level: "sd",
+        grade: "Kelas 6",
+        subject: "Pendidikan Kepercayaan Terhadap Tuhan Yang Maha Esa dan Budi Pekerti",
+        author: "Andri Hernandi",
+        driveId: "1WxP0EWejW93qz1rBds5pp4XbcRyAdCyy"
+    },
+    {
+        id: "BOK-69",
+        level: "sd",                // Pilihan: 'sd', 'smp', 'sma'
+        grade: "Kelas 6",           // Kelas
+        subject: "Bahasa Indonesia",// Mata Pelajaran
+        title: "Anak-Anak yang Mengubah Dunia",        // Judul Buku Spesifik
+        author: "Ade Kumalasari & Latifah",     // Nama Penulis
+        driveId: "1U-p001uoiVqFz9NqY0JzxAFVA456xnb9" // <--- MASUKIN ID PDF GOOGLE DRIVE DI SINI
+    },
+    {
+        id: "BOK-70",
+        level: "sd",
+        grade: "Kelas 6",
+        subject: "Matematika",
+        author: "Dicky Susanto, Savitri Sihombing, Ambarsari Kusuma Wardani, Ummy Salmah, Eunice Salim",
+        driveId: "1m5vRGe8hmJMaI0O9tiUT83TJiJsWZj7S"
+    },
+    {
+        id: "BOK-71",
+        level: "sd",
+        grade: "Kelas 6",
+        subject: "Bahasa Inggris",
+        title: "My Next Words",
+        author: "EYLC Team",
+        driveId: "19-094PiR-dnbWwD4zogYFdrsf2nnQKza" 
+    },
+    {
+        id: "BOK-72",
+        level: "sd",
+        grade: "Kelas 6",
+        subject: "Ilmu Pegetahuan Alam dan Sosial (IPAS)",
+        author: "Amalia Fitri, dkk.",
+        driveId: "1xy4MmY6Q6OAx1hDGRTOZZ9AdNBzTgjOa",
+        coverBackup: "ipassd6.png"
+    },
+    {
+        id: "BOK-73",
+        level: "sd", 
+        grade: "Kelas 6",
+        subject: "Pendidikan Pancasila dan Kewarganegaraan (PPKn)",
+        author: "Mohamad Alwi Luti, Listia, Khristina Antariningsih",
+        driveId: "17ez3fCVXjeF0DHSIMEKnnk5qnuZUXaSo" 
+    },
+    
 
     // --- BUKU SMP ---
     {
