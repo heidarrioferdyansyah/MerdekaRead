@@ -634,37 +634,135 @@ const AppDatabase = [
     },
     
 
-    // --- BUKU SMP ---
+    // --- BUKU SMP kelas 7---
     {
-        id: "BOK-0111",
+        id: "BOK-74",
         level: "smp",
-        grade: "Kelas 8",
-        subject: "Informatika",
-        title: "Berpikir Komputasional",
-        author: "Tim Litbang Kemdikbud",
-        driveId: "1_F8E_YVd_v7D5A6zGjH8I9J0K1L2M3N4"
+        grade: "Kelas 7",
+        subject: "Pendidikan Agama Buddha dan Budi Pekerti",
+        author: "Mujiyanto & Wiryanto",
+        driveId: "1a3hARUJppRhkueOkYwEVkhjGrMkyrcV_"
     },
+    
+    {
+        id: "BOK-75",
+        level: "smp",
+        grade: "Kelas 7",
+        subject: "Pendidikan Agama Hindu dan Budi Pekerti",
+        author: "I Gusti Agung Made Swebawa",
+        driveId: "1hVGCa1mzpImhyWvP3mJZrBenq6jv6LiT" 
+    },
+    {
+        id: "BOK-76",
+        level: "smp",
+        grade: "Kelas 7",
+        subject: "Pendidikan Agama Islam dan Budi Pekerti",
+        author: "Rudi Ahmad Suryadi & Sumiyati",
+        driveId: "1z0y9-I1hx1QeE70eyB9JxoFZMPunQOKr"
+    },
+    {
+        id: "BOK-77",
+        level: "smp",
+        grade: "Kelas 7",
+        subject: "Pendidikan Agama Katolik dan Budi Pekerti",
+        author: "Lorensius Atrik Wibawa & Maman Sutarman",
+        driveId: "1TSGMGXa0U-w9b9kXieYXrLQ6Cu7QjSZ-"
+    },
+    {
+        id: "BOK-78",
+        level: "smp",
+        grade: "Kelas 7",
+        subject: "Pendidikan Agama Khonghucu dan Budi Pekerti",
+        author: "Hartono & Lucky Cahya Wanditra",
+        driveId: "1E207RzPwGBGxKNr91YS3xVZTNFhwIsnl" 
+    },
+    {
+        id: "BOK-79",
+        level: "smp",
+        grade: "Kelas 7",
+        subject: "Pendidikan Agama Kristen dan Budi Pekerti",
+        author: "Janse Belandina Non-Serrano",
+        driveId: "1yrErL835CwCMrFeIkliDx0U_5x7kfr-8"
+    },
+    {
+        id: "BOK-80",
+        level: "smp",
+        grade: "Kelas 7",
+        subject: "Pendidikan Kepercayaan Terhadap Tuhan Yang Maha Esa dan Budi Pekerti",
+        author: "Jaya Damanik",
+        driveId: "1NRZ4TuHG2c0Fz7pVwMEknna_9jZ1hhXg"
+    },
+    {
+        id: "BOK-81",
+        level: "smp",
+        grade: "Kelas 7",
+        subject: "Bahasa Indonesia",// Mata Pelajaran
+        author: "Eugenia Rakhma Subarna, Soie Dewayani, Cicilia Erni Setyowati",     // Nama Penulis
+        driveId: "1gXMxBKMoPINe6QI4JjTP20JyZbsHxnPq" // <--- MASUKIN ID PDF GOOGLE DRIVE DI SINI
+    },
+    {
+        id: "BOK-82",
+        level: "smp",
+        grade: "Kelas 7",
+        subject: "Matematika",
+        author: "Dicky Susanto, dkk.",
+        driveId: "1FK5kj_DAWyeVo6rEPJgeV-X3Nryh4p10"
+    },
+    {
+        id: "BOK-83",
+        level: "smp",
+        grade: "Kelas 7",
+        subject: "Bahasa Inggris",
+        title: "ENGLISH FOR NUSANTARA",
+        author: "Ika Lestari Damayanti, dkk",
+        driveId: "1yL3HsQo2LJPbgIETUejW74smFYbqfDA_",
+        coverBackup: "englishsmp7.png"
+    },
+    {
+        id: "BOK-84",
+        level: "smp",
+        grade: "Kelas 7",
+        subject: "Ilmu Pegetahuan Alam (IPA)",
+        author: "Amalia Fitri, dkk.",
+        driveId: "1xy4MmY6Q6OAx1hDGRTOZZ9AdNBzTgjOa",
+        coverBackup: "ipassd6.png"
+    },
+    {
+        id: "BOK-85",
+        level: "smp",
+        grade: "Kelas 7",
+        subject: "Ilmu Pegetahuan Sosial (IPS)",
+        author: "Muhammad Nursa’ban & Supardi",
+        driveId: "11r8aiiJjHIKl-ZLd6lmysVFLKNybPuFO"
+    },
+    {
+        id: "BOK-86",
+        level: "smp",
+        grade: "Kelas 7",
+        subject: "Informatika",
+        author: "Maresha Caroline Wijanto, dkk.",
+        driveId: "1qTKtbZNo7vN0oHzoEM5-wuC1lKgk3IRV"
+    },
+    {
+        id: "BOK-87",
+        level: "smp",
+        grade: "Kelas 7",
+        subject: "Pendidikan Pancasila dan Kewarganegaraan (PPKn)",
+        author: "Yayat Suryatna, Ai Tin Sumartini, Devita Puspa Sari, Dwi Indah Mustiko Ningrum",
+        driveId: "1hsQRjliH4F_x8vSrj3t6kDwPPW4_t5yL" 
+    },
+    {
+        id: "BOK-88",
+        level: "smp",
+        grade: "Kelas 7",
+        subject: "Pendidikan Jasmani Olahraga dan Kesehatan (PJOK)",
+        author: "Alda Indrawan & Tri Agus Prasetijo",
+        driveId: "1SPvoDWmOMLy9vCUqSKTsJCyisiSc1CK1" 
+    },
+    
 
     // --- BUKU SMA/SMK ---
-    {
-        id: "BOK-0112",
-        level: "sma",
-        grade: "Kelas 10",
-        subject: "tes 1",
-        title: "Fisika Dasar & Mekanika",
-        author: "Prof. Yohanes",
-        driveId: "1mfNnrrfziwdCLVi-tJLDVQg8zFUzsTW3"
-    },
-    {
-        id: "BOK-0113",
-        level: "sma",
-        grade: "Kelas 11",
-        subject: "tes 2",
-        title: "Dasar Pemrograman Web",
-        author: "Heidar Rio Ferdyansyah", // Misal lu nulis buku sendiri 😎
-        driveId: "1JuxSiaJMGKAS04B3iKJXL3a2DcN9btVJ",
-        coverBackup: "ppsd.png"
-    }
+    
     
     // Tinggal copy-paste blok di atas buat nambah buku ke-6, ke-7, dst...
 ];
